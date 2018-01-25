@@ -1,0 +1,3 @@
+i3status: trying to auto-detect output_format setting
+i3status: auto-detected "i3bar"
+/bin/sh: dmenu_run: command not found
