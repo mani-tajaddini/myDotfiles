@@ -1,3 +1,27 @@
 i3status: trying to auto-detect output_format setting
 i3status: auto-detected "i3bar"
-/bin/sh: dmenu_run: command not found
+urxvt: perl extension 'keyboard-select' not found in perl library search path
+urxvt: perl extension 'resize-font' not found in perl library search path
+urxvt: perl extension 'url-select' not found in perl library search path
+urxvt: unable to parse color 'magneta', using pink instead.
+urxvt: perl extension 'keyboard-select' not found in perl library search path
+urxvt: perl extension 'resize-font' not found in perl library search path
+urxvt: perl extension 'url-select' not found in perl library search path
+urxvt: unable to parse color 'magneta', using pink instead.
+Error: Must run ranger from terminal
+Exiting due to signal.
+BUG: single log message > 4k
+i3status: trying to auto-detect output_format setting
+i3status: auto-detected "i3bar"
+Exiting due to signal.
+BUG: single log message > 4k
+i3status: trying to auto-detect output_format setting
+i3status: auto-detected "i3bar"
+Exiting due to signal.
+BUG: single log message > 4k
+i3status: trying to auto-detect output_format setting
+i3status: auto-detected "i3bar"
+Exiting due to signal.
+BUG: single log message > 4k
+i3status: trying to auto-detect output_format setting
+i3status: auto-detected "i3bar"

@@ -1,0 +1,222 @@
+windows:
+- active: true
+  geometry: !!binary |
+    AdnQywACAAAAAAAAAAAAEgAABVUAAALsAAAAAgAAABIAAAVTAAAC6gAAAAAAAAAABVY=
+  tabs:
+  - history:
+    - pinned: false
+      title: DuckDuckGo
+      url: https://start.duckduckgo.com/
+    - original-url: http://github.com/
+      pinned: false
+      title: The world's leading software development platform · GitHub
+      url: https://github.com/
+    - pinned: false
+      title: Sign in to GitHub · GitHub
+      url: https://github.com/login
+    - pinned: false
+      title: Sign in to GitHub · GitHub
+      url: https://github.com/session
+    - pinned: false
+      title: Sign in to GitHub · GitHub
+      url: https://github.com/session
+    - pinned: false
+      title: DuckDuckGo
+      url: https://start.duckduckgo.com/
+    - original-url: http://github.com/
+      pinned: false
+      title: The world's leading software development platform · GitHub
+      url: https://github.com/
+    - pinned: false
+      title: Sign in to GitHub · GitHub
+      url: https://github.com/login
+    - original-url: https://github.com/session
+      pinned: false
+      title: Sign in to GitHub · GitHub
+      url: https://github.com/login
+    - pinned: false
+      title: Sign in to GitHub · GitHub
+      url: https://github.com/session
+    - original-url: https://duckduckgo.com/?q=polybar%20arch
+      pinned: false
+      title: polybar arch at DuckDuckGo
+      url: https://duckduckgo.com/?q=polybar+arch&ia=software
+    - original-url: https://duckduckgo.com/?q=setup+pacaur+arch
+      pinned: false
+      title: setup pacaur arch at DuckDuckGo
+      url: https://duckduckgo.com/?q=setup+pacaur+arch&ia=web
+    - original-url: https://duckduckgo.com/?q=setup+pacaur+arch&ia=web
+      pinned: false
+      title: How To Install Pacaur In Arch Linux - OSTechNix
+      url: https://www.ostechnix.com/install-pacaur-arch-linux/
+    - pinned: false
+      title: http://www.githhub.com/LukeSmithxyz
+      url: http://www.githhub.com/LukeSmithxyz
+    - original-url: http://www.github.com/LukeSmithxyz
+      pinned: false
+      title: LukeSmithxyz (Luke Smith) · GitHub
+      url: https://github.com/LukeSmithxyz
+    - pinned: false
+      title: 'GitHub - LukeSmithxyz/wallpapers: A lot of people ask for the wallpapers/backgrounds
+        in my videos or that I use as decor. Here they all are!'
+      url: https://github.com/LukeSmithxyz/wallpapers
+    - active: true
+      original-url: http://youtube.com/
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: YouTube
+      url: https://www.youtube.com/
+      zoom: 1.0
+  - active: true
+    history:
+    - pinned: false
+      title: qutebrowser quickstart | qutebrowser
+      url: https://www.qutebrowser.org/quickstart.html
+    - original-url: https://duckduckgo.com/?q=zsh%20no%20matches%20found%20on%20culr
+      pinned: false
+      title: zsh no matches found on culr at DuckDuckGo
+      url: https://duckduckgo.com/?q=zsh+no+matches+found+on+culr&ia=qa
+    - original-url: https://duckduckgo.com/?q=zsh+no+matches+found+on+culr&ia=qa
+      pinned: false
+      title: 'zsh: no matches found: -? · Issue #31 · robbyrussell/oh-my-zsh · GitHub'
+      url: https://github.com/robbyrussell/oh-my-zsh/issues/31
+    - original-url: https://duckduckgo.com/?q=surreal%20wallpapers
+      pinned: false
+      title: surreal wallpapers at DuckDuckGo
+      url: https://duckduckgo.com/?q=surreal+wallpapers&ia=images
+    - original-url: https://duckduckgo.com/?q=surreal+wallpapers&ia=images
+      pinned: false
+      title: Surreal Wallpapers - Full HD wallpaper search
+      url: http://hdw.eweb4.com/search/surreal/
+    - pinned: false
+      title: Hd Wallpaper 1920X1080 Nature wallpaper - 1393832
+      url: http://hdw.eweb4.com/out/1393832.html
+    - pinned: false
+      title: DuckDuckGo
+      url: https://start.duckduckgo.com/
+    - original-url: https://duckduckgo.com/?q=abstract%20wallpapers
+      pinned: false
+      title: abstract wallpapers at DuckDuckGo
+      url: https://duckduckgo.com/?q=abstract+wallpapers&ia=web
+    - original-url: https://duckduckgo.com/?q=abstract+wallpapers&ia=web
+      pinned: false
+      title: Abstract Wallpapers - HDwallpapers.net
+      url: https://www.hdwallpapers.net/abstract
+    - pinned: false
+      title: Abstract Wallpapers - HDwallpapers.net - Page 2
+      url: https://www.hdwallpapers.net/abstract/page-2
+    - pinned: false
+      title: Abstract Wallpapers - HDwallpapers.net - Page 3
+      url: https://www.hdwallpapers.net/abstract/page-3
+    - pinned: false
+      title: Abstract Wallpapers - HDwallpapers.net - Page 4
+      url: https://www.hdwallpapers.net/abstract/page-4
+    - pinned: false
+      title: Abstract Wallpapers - HDwallpapers.net - Page 5
+      url: https://www.hdwallpapers.net/abstract/page-5
+    - pinned: false
+      title: DuckDuckGo
+      url: https://start.duckduckgo.com/
+    - original-url: https://duckduckgo.com/?q=abstract%20wallpapers
+      pinned: false
+      title: abstract wallpapers at DuckDuckGo
+      url: https://duckduckgo.com/?q=abstract+wallpapers&ia=web
+    - original-url: https://duckduckgo.com/?q=abstract+wallpapers&ia=web
+      pinned: false
+      title: Full HD 1080p Abstract Wallpapers, Desktop Backgrounds HD, Pictures and
+        Images
+      url: https://wallpaperscraft.com/catalog/abstract/1920x1080
+    - pinned: false
+      title: 'Page 2: Full HD 1080p Abstract Wallpapers, Desktop Backgrounds HD, Pictures
+        and Images'
+      url: https://wallpaperscraft.com/catalog/abstract/1920x1080/page2
+    - pinned: false
+      title: 'Page 3: Full HD 1080p Abstract Wallpapers, Desktop Backgrounds HD, Pictures
+        and Images'
+      url: https://wallpaperscraft.com/catalog/abstract/1920x1080/page3
+    - pinned: false
+      title: 'Page 4: Full HD 1080p Abstract Wallpapers, Desktop Backgrounds HD, Pictures
+        and Images'
+      url: https://wallpaperscraft.com/catalog/abstract/1920x1080/page4
+    - original-url: https://duckduckgo.com/?q=girl%20and%20paper%20airplane%20wallpaper
+      pinned: false
+      title: girl and paper airplane wallpaper at DuckDuckGo
+      url: https://duckduckgo.com/?q=girl+and+paper+airplane+wallpaper&ia=web
+    - original-url: https://duckduckgo.com/?q=surreal%20wallpapers
+      pinned: false
+      title: surreal wallpapers at DuckDuckGo
+      url: https://duckduckgo.com/?q=surreal+wallpapers&ia=images
+    - original-url: https://duckduckgo.com/?q=studio%20gibli%20wallpapers
+      pinned: false
+      title: studio gibli wallpapers at DuckDuckGo
+      url: https://duckduckgo.com/?q=studio+gibli+wallpapers&ia=web
+    - original-url: https://duckduckgo.com/?q=studio+gibli+wallpapers&ia=web
+      pinned: false
+      title: Studio Ghibli Wallpapers
+      url: https://www.wallpapervortex.com/tag-studio_ghibli.html#.WmosLrRRW00
+    - original-url: https://duckduckgo.com/?q=backlight%20arch
+      pinned: false
+      title: backlight arch at DuckDuckGo
+      url: https://duckduckgo.com/?q=backlight+arch&ia=web
+    - original-url: https://duckduckgo.com/?q=backlight+arch&ia=web
+      pinned: false
+      title: Backlight - ArchWiki
+      url: https://wiki.archlinux.org/index.php/Backlight
+    - pinned: false
+      title: YouTube
+      url: https://www.youtube.com/
+    - pinned: false
+      title: mehran modiri dorehami mahmoud kalari - YouTube
+      url: https://www.youtube.com/results?search_query=mehran+modiri+dorehami+mahmoud+kalari
+    - pinned: false
+      title: www.youtube.com
+      url: https://www.youtube.com/watch?v=UptNrex9hV4
+    - original-url: https://duckduckgo.com/?q=duckduck%5C
+      pinned: false
+      title: duckduck\ at DuckDuckGo
+      url: https://duckduckgo.com/?q=duckduck%5C&ia=web
+    - pinned: false
+      title: DuckDuckGo
+      url: https://duckduckgo.com/
+    - original-url: https://duckduckgo.com/?q=moc+arch&t=hf
+      pinned: false
+      title: moc arch at DuckDuckGo
+      url: https://duckduckgo.com/?q=moc+arch&t=hf&ia=web
+    - active: true
+      original-url: https://duckduckgo.com/?q=moc+arch&t=hf&ia=web
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Moc - ArchWiki
+      url: https://wiki.archlinux.org/index.php/Moc
+      zoom: 1.0
+  - history:
+    - active: true
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: qutebrowser quickstart | qutebrowser
+      url: https://www.qutebrowser.org/quickstart.html
+      zoom: 1.0
+  - history:
+    - active: true
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: qutebrowser quickstart | qutebrowser
+      url: https://www.qutebrowser.org/quickstart.html
+      zoom: 1.0
+  - history:
+    - active: true
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: qutebrowser quickstart | qutebrowser
+      url: https://www.qutebrowser.org/quickstart.html
+      zoom: 1.0
