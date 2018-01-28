@@ -1,0 +1,16 @@
+Jan 27 14:50 : exception: Failed to open /home/mani/.config/mpd/state: No such file or directory
+Jan 27 14:50 : exception: Failed to access /home/mani/Music: No such file or directory
+Jan 27 14:50 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 27 15:05 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 27 16:23 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 27 17:23 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 27 17:33 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 27 17:34 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 27 17:35 : client: [0] opened from 127.0.0.1:36502
+Jan 27 17:35 : client: [0] closed
+Jan 27 17:38 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 27 17:39 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 27 17:39 : client: [0] opened from 127.0.0.1:36506
+Jan 27 17:40 : client: [0] closed
+Jan 27 18:15 : client: [1] opened from 127.0.0.1:36516
+Jan 27 18:15 : client: [1] closed

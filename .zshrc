@@ -12,3 +12,5 @@ zstyle :compinstall filename '/home/mani/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+#
+source ~/.zprofile

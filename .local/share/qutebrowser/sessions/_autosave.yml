@@ -1,222 +1,230 @@
 windows:
 - active: true
   geometry: !!binary |
-    AdnQywACAAAAAAAAAAAAEgAABVUAAALsAAAAAgAAABIAAAVTAAAC6gAAAAAAAAAABVY=
+    AdnQywACAAAAAAAdAAAAMQAABTgAAALNAAAAIAAAADEAAAU1AAACygAAAAAAAAAABVY=
   tabs:
   - history:
     - pinned: false
       title: DuckDuckGo
       url: https://start.duckduckgo.com/
-    - original-url: http://github.com/
+    - original-url: https://duckduckgo.com/?q=set+BROWSER+environment+variable+arch
       pinned: false
-      title: The world's leading software development platform · GitHub
-      url: https://github.com/
-    - pinned: false
-      title: Sign in to GitHub · GitHub
-      url: https://github.com/login
-    - pinned: false
-      title: Sign in to GitHub · GitHub
-      url: https://github.com/session
-    - pinned: false
-      title: Sign in to GitHub · GitHub
-      url: https://github.com/session
-    - pinned: false
-      title: DuckDuckGo
-      url: https://start.duckduckgo.com/
-    - original-url: http://github.com/
+      title: set BROWSER environment variable arch at DuckDuckGo
+      url: https://duckduckgo.com/?q=set+BROWSER+environment+variable+arch&ia=web
+    - original-url: https://duckduckgo.com/?q=set+BROWSER+environment+variable+arch&ia=web
       pinned: false
-      title: The world's leading software development platform · GitHub
-      url: https://github.com/
+      title: Environment Variable [SOLVED] / Newbie Corner / Arch Linux Forums
+      url: https://bbs.archlinux.org/viewtopic.php?id=117815
     - pinned: false
-      title: Sign in to GitHub · GitHub
-      url: https://github.com/login
-    - original-url: https://github.com/session
-      pinned: false
-      title: Sign in to GitHub · GitHub
-      url: https://github.com/login
+      title: Bash - ArchWiki
+      url: https://wiki.archlinux.org/index.php/Bash#Environment_variables
     - pinned: false
-      title: Sign in to GitHub · GitHub
-      url: https://github.com/session
-    - original-url: https://duckduckgo.com/?q=polybar%20arch
-      pinned: false
-      title: polybar arch at DuckDuckGo
-      url: https://duckduckgo.com/?q=polybar+arch&ia=software
-    - original-url: https://duckduckgo.com/?q=setup+pacaur+arch
-      pinned: false
-      title: setup pacaur arch at DuckDuckGo
-      url: https://duckduckgo.com/?q=setup+pacaur+arch&ia=web
-    - original-url: https://duckduckgo.com/?q=setup+pacaur+arch&ia=web
-      pinned: false
-      title: How To Install Pacaur In Arch Linux - OSTechNix
-      url: https://www.ostechnix.com/install-pacaur-arch-linux/
+      title: Bash - ArchWiki
+      url: https://wiki.archlinux.org/index.php/Bash#Shell_and_environment_variables
     - pinned: false
-      title: http://www.githhub.com/LukeSmithxyz
-      url: http://www.githhub.com/LukeSmithxyz
-    - original-url: http://www.github.com/LukeSmithxyz
-      pinned: false
-      title: LukeSmithxyz (Luke Smith) · GitHub
-      url: https://github.com/LukeSmithxyz
+      title: YouTube
+      url: https://www.youtube.com/
     - pinned: false
-      title: 'GitHub - LukeSmithxyz/wallpapers: A lot of people ask for the wallpapers/backgrounds
-        in my videos or that I use as decor. Here they all are!'
-      url: https://github.com/LukeSmithxyz/wallpapers
+      title: Hadise - Sıfır Tolerans - YouTube
+      url: https://www.youtube.com/watch?v=sui9MKrDnQk
+    - pinned: false
+      title: YouTube
+      url: https://www.youtube.com/
+    - original-url: https://www.youtube.com/
+      pinned: false
+      title: YouTube
+      url: https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Fnext%3D%252F%26hl%3Den%26app%3Ddesktop%26action_handle_signin%3Dtrue&passive=true&service=youtube&uilel=3&flowName=GlifWebSignIn&flowEntry=ServiceLogin
+    - original-url: https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Fnext%3D%252F%26hl%3Den%26app%3Ddesktop%26action_handle_signin%3Dtrue&passive=true&service=youtube&uilel=3&flowName=GlifWebSignIn&flowEntry=ServiceLogin
+      pinned: false
+      title: YouTube
+      url: https://accounts.google.com/signin/v2/sl/pwd?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Fnext%3D%252F%26hl%3Den%26app%3Ddesktop%26action_handle_signin%3Dtrue&passive=true&service=youtube&uilel=3&flowName=GlifWebSignIn&flowEntry=ServiceLogin&cid=1&navigationDirection=forward
+    - original-url: https://accounts.google.com/signin/v2/sl/pwd?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Fnext%3D%252F%26hl%3Den%26app%3Ddesktop%26action_handle_signin%3Dtrue&passive=true&service=youtube&uilel=3&flowName=GlifWebSignIn&flowEntry=ServiceLogin&cid=1&navigationDirection=forward
+      pinned: false
+      title: (54) YouTube
+      url: https://www.youtube.com/
+    - original-url: https://www.youtube.com/
+      pinned: false
+      title: (54) Andrea Bocelli - Nelle Tue Mani (Now We Are Free) from ‘Gladiator'
+        - YouTube
+      url: https://www.youtube.com/watch?v=GD2THFRoYW0&list=RDMMGD2THFRoYW0
+    - original-url: https://www.youtube.com/watch?v=GD2THFRoYW0&list=RDMMGD2THFRoYW0
+      pinned: false
+      title: '(54) وای امان از دل زینب : مرحوم سیدمحمدباقر علوی، حسینیه کربلاییهای
+        قم - YouTube'
+      url: https://www.youtube.com/watch?v=iUxaa-dYTbQ&list=RDMMGD2THFRoYW0&index=2
+    - original-url: https://www.youtube.com/watch?v=iUxaa-dYTbQ&list=RDMMGD2THFRoYW0&index=2
+      pinned: false
+      title: (54) Buongiorno! (Luciano Pavarotti - Buongiorno a te) - YouTube
+      url: https://www.youtube.com/watch?v=4Gb5HnOq6Q4&list=RDMMGD2THFRoYW0&index=3
+    - original-url: https://www.youtube.com/watch?v=4Gb5HnOq6Q4&list=RDMMGD2THFRoYW0&index=3
+      pinned: false
+      title: (54) Argerich plays Bartók - Piano Sonata, Sz. 80 Audio + Sheet music
+        - YouTube
+      url: https://www.youtube.com/watch?v=lpIlo8tGbSo&list=RDMMGD2THFRoYW0&index=4
+    - original-url: https://www.youtube.com/watch?v=lpIlo8tGbSo&list=RDMMGD2THFRoYW0&index=4
+      pinned: false
+      title: (54) Hossein Alizadeh, Keyhan Kalhor & M. Khaladj - Masters of Improvisation
+        (Part 3) - YouTube
+      url: https://www.youtube.com/watch?v=6OiUq0brX8c&index=5&list=RDMMGD2THFRoYW0
+    - original-url: https://www.youtube.com/watch?v=6OiUq0brX8c&index=5&list=RDMMGD2THFRoYW0
+      pinned: false
+      title: (54) luke smith mpd - YouTube
+      url: https://www.youtube.com/results?search_query=luke+smith+mpd
+    - original-url: https://www.youtube.com/results?search_query=luke+smith+mpd
+      pinned: false
+      title: '(54) Great Music is Unpronounceable: ncmpcpp w/ mpd - YouTube'
+      url: https://www.youtube.com/watch?v=sZIEdI9TS2U
+    - original-url: https://www.youtube.com/watch?v=sZIEdI9TS2U
+      pinned: false
+      title: (54) Set up mpd as a service with ncmpcpp in linux - YouTube
+      url: https://www.youtube.com/watch?v=Jk8hn8xAgzo
+    - original-url: https://www.youtube.com/watch?v=Jk8hn8xAgzo
+      pinned: false
+      title: (54) How to install mpd and ncmpcpp in linux and how to add songs - YouTube
+      url: https://www.youtube.com/watch?v=NwS28dX7eOI
     - active: true
-      original-url: http://youtube.com/
+      original-url: https://www.youtube.com/watch?v=NwS28dX7eOI
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: YouTube
-      url: https://www.youtube.com/
+      title: (55) Easy MPD (Arch Linux) - YouTube
+      url: https://www.youtube.com/watch?v=wjW6nDhlEN8
       zoom: 1.0
   - active: true
     history:
     - pinned: false
-      title: qutebrowser quickstart | qutebrowser
-      url: https://www.qutebrowser.org/quickstart.html
-    - original-url: https://duckduckgo.com/?q=zsh%20no%20matches%20found%20on%20culr
-      pinned: false
-      title: zsh no matches found on culr at DuckDuckGo
-      url: https://duckduckgo.com/?q=zsh+no+matches+found+on+culr&ia=qa
-    - original-url: https://duckduckgo.com/?q=zsh+no+matches+found+on+culr&ia=qa
-      pinned: false
-      title: 'zsh: no matches found: -? · Issue #31 · robbyrussell/oh-my-zsh · GitHub'
-      url: https://github.com/robbyrussell/oh-my-zsh/issues/31
-    - original-url: https://duckduckgo.com/?q=surreal%20wallpapers
-      pinned: false
-      title: surreal wallpapers at DuckDuckGo
-      url: https://duckduckgo.com/?q=surreal+wallpapers&ia=images
-    - original-url: https://duckduckgo.com/?q=surreal+wallpapers&ia=images
-      pinned: false
-      title: Surreal Wallpapers - Full HD wallpaper search
-      url: http://hdw.eweb4.com/search/surreal/
+      title: (54) Buongiorno! (Luciano Pavarotti - Buongiorno a te) - YouTube
+      url: https://www.youtube.com/watch?v=4Gb5HnOq6Q4&list=RDMMGD2THFRoYW0&index=3
     - pinned: false
-      title: Hd Wallpaper 1920X1080 Nature wallpaper - 1393832
-      url: http://hdw.eweb4.com/out/1393832.html
-    - pinned: false
-      title: DuckDuckGo
-      url: https://start.duckduckgo.com/
-    - original-url: https://duckduckgo.com/?q=abstract%20wallpapers
+      title: (54) st terminal arch - YouTube
+      url: https://www.youtube.com/results?search_query=st+terminal+arch
+    - original-url: https://duckduckgo.com/?q=st%20terminal%20arch
       pinned: false
-      title: abstract wallpapers at DuckDuckGo
-      url: https://duckduckgo.com/?q=abstract+wallpapers&ia=web
-    - original-url: https://duckduckgo.com/?q=abstract+wallpapers&ia=web
+      title: st terminal arch at DuckDuckGo
+      url: https://duckduckgo.com/?q=st+terminal+arch&ia=web
+    - original-url: https://duckduckgo.com/?q=st+terminal+arch&ia=web
       pinned: false
-      title: Abstract Wallpapers - HDwallpapers.net
-      url: https://www.hdwallpapers.net/abstract
-    - pinned: false
-      title: Abstract Wallpapers - HDwallpapers.net - Page 2
-      url: https://www.hdwallpapers.net/abstract/page-2
-    - pinned: false
-      title: Abstract Wallpapers - HDwallpapers.net - Page 3
-      url: https://www.hdwallpapers.net/abstract/page-3
-    - pinned: false
-      title: Abstract Wallpapers - HDwallpapers.net - Page 4
-      url: https://www.hdwallpapers.net/abstract/page-4
-    - pinned: false
-      title: Abstract Wallpapers - HDwallpapers.net - Page 5
-      url: https://www.hdwallpapers.net/abstract/page-5
-    - pinned: false
-      title: DuckDuckGo
-      url: https://start.duckduckgo.com/
-    - original-url: https://duckduckgo.com/?q=abstract%20wallpapers
+      title: st - ArchWiki
+      url: https://wiki.archlinux.org/index.php/St
+    - original-url: https://duckduckgo.com/?q=mpd%20arch
       pinned: false
-      title: abstract wallpapers at DuckDuckGo
-      url: https://duckduckgo.com/?q=abstract+wallpapers&ia=web
-    - original-url: https://duckduckgo.com/?q=abstract+wallpapers&ia=web
+      title: mpd arch at DuckDuckGo
+      url: https://duckduckgo.com/?q=mpd+arch&ia=web
+    - original-url: https://duckduckgo.com/?q=mpd+arch&ia=web
       pinned: false
-      title: Full HD 1080p Abstract Wallpapers, Desktop Backgrounds HD, Pictures and
-        Images
-      url: https://wallpaperscraft.com/catalog/abstract/1920x1080
+      title: wiki.archlinux.org
+      url: https://wiki.archlinux.org/index.php/Music_Player_Daemon
+    - original-url: https://duckduckgo.com/?q=systemctl%20which%20services%20are%20running
+      pinned: false
+      title: systemctl which services are running at DuckDuckGo
+      url: https://duckduckgo.com/?q=systemctl+which+services+are+running&ia=qa
+    - original-url: https://duckduckgo.com/?q=systemctl+which+services+are+running&ia=qa
+      pinned: false
+      title: systemd - How to list all enabled services from systemctl? - Ask Ubuntu
+      url: https://askubuntu.com/questions/795226/how-to-list-all-enabled-services-from-systemctl
+    - original-url: https://duckduckgo.com/?q=pinentry%20arch
+      pinned: false
+      title: pinentry arch at DuckDuckGo
+      url: https://duckduckgo.com/?q=pinentry+arch&ia=web
+    - original-url: https://duckduckgo.com/?q=pinentry+arch&ia=web
+      pinned: false
+      title: Pinentry - ArchWiki
+      url: https://wiki.archlinux.org/index.php?title=Pinentry&redirect=no
     - pinned: false
-      title: 'Page 2: Full HD 1080p Abstract Wallpapers, Desktop Backgrounds HD, Pictures
-        and Images'
-      url: https://wallpaperscraft.com/catalog/abstract/1920x1080/page2
+      title: GnuPG - ArchWiki
+      url: https://wiki.archlinux.org/index.php/GnuPG#Unattended_passphrase
+    - original-url: https://duckduckgo.com/?q=what%20is%20blender%20arch
+      pinned: false
+      title: what is blender arch at DuckDuckGo
+      url: https://duckduckgo.com/?q=what+is+blender+arch&ia=qa
+    - original-url: https://duckduckgo.com/?q=what+is+blender+arch&ia=qa
+      pinned: false
+      title: Blender - ArchWiki
+      url: https://wiki.archlinux.org/index.php/Blender
+    - original-url: https://duckduckgo.com/?q=marble%20arch
+      pinned: false
+      title: marble arch at DuckDuckGo
+      url: https://duckduckgo.com/?q=marble+arch&ia=web
+    - original-url: https://duckduckgo.com/?q=marble+arch+linux
+      pinned: false
+      title: marble arch linux at DuckDuckGo
+      url: https://duckduckgo.com/?q=marble+arch+linux&ia=web
     - pinned: false
-      title: 'Page 3: Full HD 1080p Abstract Wallpapers, Desktop Backgrounds HD, Pictures
-        and Images'
-      url: https://wallpaperscraft.com/catalog/abstract/1920x1080/page3
+      title: marble arch linux at DuckDuckGo
+      url: https://duckduckgo.com/?q=marble+arch+linux&iax=images&ia=images
+    - original-url: https://duckduckgo.com/?q=marble+mouse+arch+linux&iar=images
+      pinned: false
+      title: marble mouse arch linux at DuckDuckGo
+      url: https://duckduckgo.com/?q=marble+mouse+arch+linux&iar=images&iax=images&ia=images
+    - original-url: https://duckduckgo.com/?q=marble+mouse+arch+linux&iar=images&iax=images&ia=images
+      pinned: false
+      title: Logitech Marble Mouse - ArchWiki
+      url: https://wiki.archlinux.org/index.php/Logitech_Marble_Mouse
+    - original-url: https://duckduckgo.com/?q=gtkfileschooserdialog
+      pinned: false
+      title: gtkfileschooserdialog at DuckDuckGo
+      url: https://duckduckgo.com/?q=gtkfileschooserdialog&ia=web
+    - original-url: https://duckduckgo.com/?q=gtkfileschooserdialog+arch
+      pinned: false
+      title: gtkfileschooserdialog arch at DuckDuckGo
+      url: https://duckduckgo.com/?q=gtkfileschooserdialog+arch&ia=web
+    - original-url: https://duckduckgo.com/?q=gtkfileschooserdialog+arch&ia=web
+      pinned: false
+      title: 'GtkFileChooserDialog: GTK+ 3 Reference Manual'
+      url: https://developer.gnome.org/gtk3/stable/GtkFileChooserDialog.html
+    - original-url: https://duckduckgo.com/?q=mupfd
+      pinned: false
+      title: mupfd at DuckDuckGo
+      url: https://duckduckgo.com/?q=mupfd&ia=web
+    - original-url: https://duckduckgo.com/?q=mupfd+arch
+      pinned: false
+      title: mupfd arch at DuckDuckGo
+      url: https://duckduckgo.com/?q=mupfd+arch&ia=web
+    - original-url: https://duckduckgo.com/?q=mupfd+arch&ia=web
+      pinned: false
+      title: MuPDF - ArchWiki
+      url: https://wiki.archlinux.org/index.php/MuPDF
+    - original-url: https://duckduckgo.com/?q=no%20startup%20id%20i3
+      pinned: false
+      title: no startup id i3 at DuckDuckGo
+      url: https://duckduckgo.com/?q=no+startup+id+i3&ia=qa
+    - original-url: https://duckduckgo.com/?q=no+startup+id+i3&ia=qa
+      pinned: false
+      title: 'i3: i3 User’s Guide'
+      url: https://i3wm.org/docs/userguide.html
     - pinned: false
-      title: 'Page 4: Full HD 1080p Abstract Wallpapers, Desktop Backgrounds HD, Pictures
-        and Images'
-      url: https://wallpaperscraft.com/catalog/abstract/1920x1080/page4
-    - original-url: https://duckduckgo.com/?q=girl%20and%20paper%20airplane%20wallpaper
-      pinned: false
-      title: girl and paper airplane wallpaper at DuckDuckGo
-      url: https://duckduckgo.com/?q=girl+and+paper+airplane+wallpaper&ia=web
-    - original-url: https://duckduckgo.com/?q=surreal%20wallpapers
-      pinned: false
-      title: surreal wallpapers at DuckDuckGo
-      url: https://duckduckgo.com/?q=surreal+wallpapers&ia=images
-    - original-url: https://duckduckgo.com/?q=studio%20gibli%20wallpapers
-      pinned: false
-      title: studio gibli wallpapers at DuckDuckGo
-      url: https://duckduckgo.com/?q=studio+gibli+wallpapers&ia=web
-    - original-url: https://duckduckgo.com/?q=studio+gibli+wallpapers&ia=web
-      pinned: false
-      title: Studio Ghibli Wallpapers
-      url: https://www.wallpapervortex.com/tag-studio_ghibli.html#.WmosLrRRW00
-    - original-url: https://duckduckgo.com/?q=backlight%20arch
-      pinned: false
-      title: backlight arch at DuckDuckGo
-      url: https://duckduckgo.com/?q=backlight+arch&ia=web
-    - original-url: https://duckduckgo.com/?q=backlight+arch&ia=web
-      pinned: false
-      title: Backlight - ArchWiki
-      url: https://wiki.archlinux.org/index.php/Backlight
-    - pinned: false
-      title: YouTube
-      url: https://www.youtube.com/
-    - pinned: false
-      title: mehran modiri dorehami mahmoud kalari - YouTube
-      url: https://www.youtube.com/results?search_query=mehran+modiri+dorehami+mahmoud+kalari
-    - pinned: false
-      title: www.youtube.com
-      url: https://www.youtube.com/watch?v=UptNrex9hV4
-    - original-url: https://duckduckgo.com/?q=duckduck%5C
-      pinned: false
-      title: duckduck\ at DuckDuckGo
-      url: https://duckduckgo.com/?q=duckduck%5C&ia=web
-    - pinned: false
-      title: DuckDuckGo
-      url: https://duckduckgo.com/
-    - original-url: https://duckduckgo.com/?q=moc+arch&t=hf
-      pinned: false
-      title: moc arch at DuckDuckGo
-      url: https://duckduckgo.com/?q=moc+arch&t=hf&ia=web
+      title: 'i3: i3 User’s Guide'
+      url: https://i3wm.org/docs/userguide.html#exec
     - active: true
-      original-url: https://duckduckgo.com/?q=moc+arch&t=hf&ia=web
+      original-url: https://duckduckgo.com/?q=zzz%20arch%20linux
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: Moc - ArchWiki
-      url: https://wiki.archlinux.org/index.php/Moc
+      title: zzz arch linux at DuckDuckGo
+      url: https://duckduckgo.com/?q=zzz+arch+linux&ia=web
       zoom: 1.0
   - history:
+    - original-url: https://duckduckgo.com/?q=alsa%20lib%20pcm_dmix.c%201099%20unable%20to%20open%20slave
+      pinned: false
+      title: alsa lib pcm_dmix.c 1099 unable to open slave at DuckDuckGo
+      url: https://duckduckgo.com/?q=alsa+lib+pcm_dmix.c+1099+unable+to+open+slave&ia=web
+    - original-url: https://duckduckgo.com/?q=alsa+lib+pcm_dmix.c+1099+unable+to+open+slave&ia=web
+      pinned: false
+      title: '[SOLVED]New Build, no sound, Alsa unable to open slave / Multimedia
+        and Games / Arch Linux Forums'
+      url: https://bbs.archlinux.org/viewtopic.php?id=173709
+    - original-url: https://duckduckgo.com/?q=mpv%20arch
+      pinned: false
+      title: mpv arch at DuckDuckGo
+      url: https://duckduckgo.com/?q=mpv+arch&ia=web
     - active: true
+      original-url: https://duckduckgo.com/?q=mpv+arch&ia=web
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: qutebrowser quickstart | qutebrowser
-      url: https://www.qutebrowser.org/quickstart.html
-      zoom: 1.0
-  - history:
-    - active: true
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: qutebrowser quickstart | qutebrowser
-      url: https://www.qutebrowser.org/quickstart.html
-      zoom: 1.0
-  - history:
-    - active: true
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: qutebrowser quickstart | qutebrowser
-      url: https://www.qutebrowser.org/quickstart.html
+      title: mpv - ArchWiki
+      url: https://wiki.archlinux.org/index.php/Mpv
       zoom: 1.0

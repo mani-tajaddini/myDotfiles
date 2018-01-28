@@ -5,29 +5,40 @@
 |1,4
 
 # Value of 'encoding' when this file was written
-*encoding=latin1
+*encoding=utf-8
 
 
 # hlsearch on (H) or off (h):
 ~h
+# Last Search Pattern:
+~MSle0~/layout
+
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
-:x!
-|2,0,1517046484,,"x!"
 :x
-|2,0,1517046441,,"x"
+|2,0,1517129505,,"x"
 :q
-|2,0,1517046429,,"q"
-:w
-|2,0,1516948195,,"w"
+|2,0,1517129490,,"q"
 :q!
-|2,0,1516947850,,"q!"
+|2,0,1517129476,,"q!"
+:w!
+|2,0,1517065701,,"w!"
+:w
+|2,0,1517065695,,"w"
+:x!
+|2,0,1517053670,,"x!"
+:'<,'>"*y
+|2,0,1517048811,,"'<,'>\"*y"
+:Q!
+|2,0,1517047861,,"Q!"
 
 # Search String History (newest to oldest):
+?/layout
+|2,1,1517070518,47,"layout"
 ? @$
-|2,1,1517046347,,"@$"
+|2,1,1517057330,,"@$"
 ?/dmeni
 |2,1,1516946991,47,"dmeni"
 
@@ -38,250 +49,524 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-""0	CHAR	0
-	b
-|3,1,0,0,1,0,1517046347,"b"
-"1	LINE	0
-	*color4: #407ee7
-	*color12: #407ee7
-|3,0,1,1,2,0,1516947833,"*color4: #407ee7","*color12: #407ee7"
+"0	LINE	0
+	for_window [instance="dropdown"] floating enable
+	for_window [instance="dropdown"] resize set 625 400
+	for_window [instance="dropdown"] move scratchpad
+	for_window [instance="dropdown"] border pixel 3
+	exec --no-startuo-id $term -n dropdown -e tmux
+|3,0,0,1,5,0,1517083298,"for_window [instance=\"dropdown\"] floating enable","for_window [instance=\"dropdown\"] resize set 625 400","for_window [instance=\"dropdown\"] move scratchpad","for_window [instance=\"dropdown\"] border pixel 3","exec --no-startuo-id $term -n dropdown -e tmux"
+""1	LINE	0
+	# #---Dropdown/Scratchpad Windows---# #
+	# First I have a tmux window used for background scripts.
+	# I'll later bind this to mod+u.
+	for_window [instance="dropdown"] floating enable
+	for_window [instance="dropdown"] resize set 625 400
+	for_window [instance="dropdown"] move scratchpad
+	for_window [instance="dropdown"] border pixel 3
+	exec --no-startup-id $term -n dropdown -e tmux
+	
+	# Then I have a window running R I use for basic arithmetic
+	# I'll later bind this to mod+a.
+	for_window [instance="math"] floating enable
+	for_window [instance="math"] resize set 800 300
+	for_window [instance="math"] move scratchpad
+	for_window [instance="math"] border pixel 5
+	exec --no-startup-id $term -n math -f mono:pixelsize=24 -e R -q
+	
+	
+|3,1,1,1,18,0,1517083401,"# #---Dropdown/Scratchpad Windows---# #","# First I have a tmux window used for background scripts.","# I'll later bind this to mod+u.","for_window [instance=\"dropdown\"] floating enable","for_window [instance=\"dropdown\"] resize set 625 400","for_window [instance=\"dropdown\"] move scratchpad","for_window [instance=\"dropdown\"] border pixel 3","exec --no-startup-id $term -n dropdown -e tmux","",>61
+|<"# Then I have a window running R I use for basic arithmetic","# I'll later bind this to mod+a.","for_window [instance=\"math\"] floating enable","for_window [instance=\"math\"] resize set 800 300","for_window [instance=\"math\"] move scratchpad","for_window [instance=\"math\"] border pixel 5","exec --no-startup-id $term -n math -f mono:pixelsize=24 -e R -q","",""
+"2	LINE	0
+	bindsym $mod			exec
+|3,0,2,1,1,0,1517083204,"bindsym $mod			exec"
+"3	LINE	0
+	# For advancing forward/backward in an mpd song
+	bindsym $mod+bracketleft 	exec $lilbak
+	bindsym $mod+Shift+bracketleft 	exec $bigbak
+	bindsym $mod+bracketright 	exec $lilfor
+	bindsym $mod+Shift+bracketright exec $bigfor
+	
+	# Print screen takes a screenshot.
+	# With shift, it takes one only of the given window.
+	bindsym Print 			exec --no-startup-id scrot
+	bindsym Shift+Print 		exec --no-startup-id scrot -u
+	
+|3,0,3,1,11,0,1517082866,"# For advancing forward/backward in an mpd song","bindsym $mod+bracketleft 	exec $lilbak","bindsym $mod+Shift+bracketleft 	exec $bigbak","bindsym $mod+bracketright 	exec $lilfor","bindsym $mod+Shift+bracketright exec $bigfor","","# Print screen takes a screenshot.","# With shift, it takes one only of the given window.","bindsym Print 			exec --no-startup-id scrot","bindsym Shift+Print 		exec --no-startup-id scrot -u",""
+"4	LINE	0
+	# #---Media Keys---# #
+	
+	# Volume keys
+	bindsym $mod+plus		exec $inc
+	bindsym $mod+Shift+plus		exec $biginc
+	bindsym $mod+minus 		exec $dec
+	bindsym $mod+Shift+minus	exec $bigdec
+	bindsym $mod+less 		exec $prev
+	bindsym $mod+Shift+less		exec $beg
+	bindsym $mod+greater		exec $next
+	bindsym $mod+Shift+greater	exec $next
+	
+|3,0,4,1,12,0,1517082510,"# #---Media Keys---# #","","# Volume keys","bindsym $mod+plus		exec $inc","bindsym $mod+Shift+plus		exec $biginc","bindsym $mod+minus 		exec $dec","bindsym $mod+Shift+minus	exec $bigdec","bindsym $mod+less 		exec $prev","bindsym $mod+Shift+less		exec $beg","bindsym $mod+greater		exec $next","bindsym $mod+Shift+greater	exec $next",""
+"5	LINE	0
+	# #---Arrow Keys---# #
+	bindsym $mod+Left		focus left
+	bindsym $mod+Down		focus down
+	bindsym $mod+Up			focus up
+	bindsym $mod+Right 		focus right
+	bindsym $mod+Shift+Left		move left
+	bindsym $mod+Shift+Down		move down
+	bindsym $mod+Shift+Up		move up
+	bindsym $mod+Shift+Right 	move right
+	
+	
+|3,0,5,1,11,0,1517082257,"# #---Arrow Keys---# #","bindsym $mod+Left		focus left","bindsym $mod+Down		focus down","bindsym $mod+Up			focus up","bindsym $mod+Right 		focus right","bindsym $mod+Shift+Left		move left","bindsym $mod+Shift+Down		move down","bindsym $mod+Shift+Up		move up","bindsym $mod+Shift+Right 	move right","",""
+"6	LINE	0
+	bindsym $mod+F1		exec --no-startup-id mupdf ~/.config/i3/i3_guide.pdf
+	bindsym $mod+F2		restart
+	bindsym $mod+F3		exec --no-startup-id arandr
+	bindsym $mod+F4		exec --no-startup-id sudo zzz
+	bindsym $mod+F5		exec --no-startup-id $netrefresh
+	bindsym $mod+F6		exec --no-startup-id $term -e transmission-remote-cli
+	##bindsym $mod+F7
+	##bindsym $mod+F8
+	bindsym $mod+F9		exec --no-startup-id sudo mount -a
+	bindsym $mod+F10	exec --no-startup-id ~/.config/Scripts/screen.sh l ;; exec --no-startup-id ~/.config/polybar/launch.sh
+	bindsym $mod+F11	exec --no-startup-id ~/.config/Scripts/screen.sh v ;; exec --no-startup-id ~/.config/polybar/launch.sh
+	bindsym $mod+F12	exec --no-startup-id ~/.config/Scripts/screen.sh d ;; exec --no-startup-id ~/.config/polybar/launch.sh
+	
+	
+|3,0,6,1,14,0,1517082211,"bindsym $mod+F1		exec --no-startup-id mupdf ~/.config/i3/i3_guide.pdf","bindsym $mod+F2		restart","bindsym $mod+F3		exec --no-startup-id arandr","bindsym $mod+F4		exec --no-startup-id sudo zzz","bindsym $mod+F5		exec --no-startup-id $netrefresh","bindsym $mod+F6		exec --no-startup-id $term -e transmission-remote-cli","##bindsym $mod+F7","##bindsym $mod+F8","bindsym $mod+F9		exec --no-startup-id sudo mount -a",>121
+|<"bindsym $mod+F10	exec --no-startup-id ~/.config/Scripts/screen.sh l ;; exec --no-startup-id ~/.config/polybar/launch.sh","bindsym $mod+F11	exec --no-startup-id ~/.config/Scripts/screen.sh v ;; exec --no-startup-id ~/.config/polybar/launch.sh","bindsym $mod+F12	exec --no-startup-id ~/.config/Scripts/screen.sh d ;; exec --no-startup-id ~/.config/polybar/launch.sh","",""
+"7	LINE	0
+	# #---Function Buttons---# #
+	##bindsym F1		nop
+	##bindsym F2
+	##bindsym F3
+	##bindsym F4
+	##bindsym F5
+	##bindsym F6
+	##bindsym F7
+	##bindsym F8
+	##bindsym F9
+	##bindsym F10
+	bindsym F11		fullscreen toggle
+	##bindsym F12
+	
+|3,0,7,1,14,0,1517079970,"# #---Function Buttons---# #","##bindsym F1		nop","##bindsym F2","##bindsym F3","##bindsym F4","##bindsym F5","##bindsym F6","##bindsym F7","##bindsym F8","##bindsym F9","##bindsym F10","bindsym F11		fullscreen toggle","##bindsym F12",""
+"8	LINE	0
+	workspace $ws6 gaps inner 0
+	workspace $ws6 gaps outer 0
+	workspace $ws5 gaps inner 0
+	workspace $ws5 gaps outer 0
+	workspace $ws8 gaps inner 0
+	workspace $ws8 gaps outer 0
+	
+|3,0,8,1,7,0,1517079841,"workspace $ws6 gaps inner 0","workspace $ws6 gaps outer 0","workspace $ws5 gaps inner 0","workspace $ws5 gaps outer 0","workspace $ws8 gaps inner 0","workspace $ws8 gaps outer 0",""
+"9	LINE	0
+	for_window [class="Pinentry"] sticky enable
+	for_window [class="Blender"] move to workspace $ws6
+	for_window [class="marble"] move to workspace $ws7
+	for_window [title="GIMP Startup"] move workspace $ws5
+	for_window [class="Gimp"] move workspace $ws5
+	for_window [window_role="gimp-dock"] floating disable; move left; resize shrink width 50 px or 50ppt
+	for_window [window_role="gimp-toolbox"] floating disable; move right; resize grow width 30 px or 30ppt
+	for_window [window_role="GtkFileChooserDialog"] resize shrink height 10 px
+	
+	
+|3,0,9,1,10,0,1517079825,"for_window [class=\"Pinentry\"] sticky enable","for_window [class=\"Blender\"] move to workspace $ws6","for_window [class=\"marble\"] move to workspace $ws7","for_window [title=\"GIMP Startup\"] move workspace $ws5","for_window [class=\"Gimp\"] move workspace $ws5","for_window [window_role=\"gimp-dock\"] floating disable; move left; resize shrink width 50 px or 50ppt",>106
+|<"for_window [window_role=\"gimp-toolbox\"] floating disable; move right; resize grow width 30 px or 30ppt","for_window [window_role=\"GtkFileChooserDialog\"] resize shrink height 10 px","",""
 "-	CHAR	0
-	b
-|3,0,36,0,1,0,1516947844,"b"
+	t
+|3,0,36,0,1,0,1517082700,"t"
 
 # File marks:
-'0  3  9  ~/.gitignore
-|4,48,3,9,1517046484,"~/.gitignore"
-'1  2  7  ~/.gitignore
-|4,49,2,7,1517046445,"~/.gitignore"
-'2  2  7  ~/.gitignore
-|4,50,2,7,1517046445,"~/.gitignore"
-'3  1  0  ~/.giti
-|4,51,1,0,1517046429,"~/.giti"
-'4  8  0  ~/.vim
-|4,52,8,0,1517046354,"~/.vim"
-'5  1  0  ~/voidrice/.config/fontconfig/fonts.conf
-|4,53,1,0,1517003335,"~/voidrice/.config/fontconfig/fonts.conf"
-'6  1  0  ~/voidrice/.config/compton.conf
-|4,54,1,0,1517003172,"~/voidrice/.config/compton.conf"
-'7  1  0  ~/voidrice/.config/feh/keys
-|4,55,1,0,1517003082,"~/voidrice/.config/feh/keys"
-'8  1  0  ~/.config/Scripts/remaps
-|4,56,1,0,1517002976,"~/.config/Scripts/remaps"
-'9  1  0  ~/.config/Scripts/folders
-|4,57,1,0,1517002956,"~/.config/Scripts/folders"
+'0  4  4  ~/.gitignore
+|4,48,4,4,1517129505,"~/.gitignore"
+'1  1  0  ~/.gitoig
+|4,49,1,0,1517129490,"~/.gitoig"
+'2  1  0  ~/voidrice/.config/i3/config
+|4,50,1,0,1517129476,"~/voidrice/.config/i3/config"
+'3  229  28  ~/.config/i3/config
+|4,51,229,28,1517129453,"~/.config/i3/config"
+'4  88  0  ~/.config/i3/config
+|4,52,88,0,1517082660,"~/.config/i3/config"
+'5  88  0  ~/.config/i3/config
+|4,53,88,0,1517082660,"~/.config/i3/config"
+'6  16  8  ~/.zshrc
+|4,54,16,8,1517065617,"~/.zshrc"
+'7  4  9  ~/.zprofile
+|4,55,4,9,1517065578,"~/.zprofile"
+'8  36  29  ~/.config/mpd/mpd.conf
+|4,56,36,29,1517063902,"~/.config/mpd/mpd.conf"
+'9  22  26  ~/.config/mpd/mpd.conf
+|4,57,22,26,1517063230,"~/.config/mpd/mpd.conf"
 
 # Jumplist (newest first):
+-'  4  4  ~/.gitignore
+|4,39,4,4,1517129505,"~/.gitignore"
 -'  3  9  ~/.gitignore
-|4,39,3,9,1517046484,"~/.gitignore"
--'  2  7  ~/.gitignore
-|4,39,2,7,1517046475,"~/.gitignore"
--'  2  7  ~/.gitignore
-|4,39,2,7,1517046445,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1517046431,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1517046431,"~/.gitignore"
--'  1  0  ~/.giti
-|4,39,1,0,1517046429,"~/.giti"
--'  1  0  ~/.giti
-|4,39,1,0,1517046429,"~/.giti"
--'  1  0  ~/.giti
-|4,39,1,0,1517046429,"~/.giti"
--'  1  0  ~/.giti
-|4,39,1,0,1517046429,"~/.giti"
--'  8  0  ~/.vim
-|4,39,8,0,1517046354,"~/.vim"
--'  8  0  ~/.vim
-|4,39,8,0,1517046354,"~/.vim"
--'  8  0  ~/.vim
-|4,39,8,0,1517046354,"~/.vim"
--'  8  0  ~/.vim
-|4,39,8,0,1517046354,"~/.vim"
--'  8  0  ~/.vim
-|4,39,8,0,1517046354,"~/.vim"
--'  8  0  ~/.vim
-|4,39,8,0,1517046354,"~/.vim"
--'  8  0  ~/.vim
-|4,39,8,0,1517046354,"~/.vim"
--'  8  0  ~/.vim
-|4,39,8,0,1517046354,"~/.vim"
--'  1  0  ~/voidrice/.config/fontconfig/fonts.conf
-|4,39,1,0,1517003335,"~/voidrice/.config/fontconfig/fonts.conf"
--'  1  0  ~/voidrice/.config/fontconfig/fonts.conf
-|4,39,1,0,1517003335,"~/voidrice/.config/fontconfig/fonts.conf"
--'  1  0  ~/voidrice/.config/fontconfig/fonts.conf
-|4,39,1,0,1517003335,"~/voidrice/.config/fontconfig/fonts.conf"
--'  1  0  ~/voidrice/.config/fontconfig/fonts.conf
-|4,39,1,0,1517003335,"~/voidrice/.config/fontconfig/fonts.conf"
--'  1  0  ~/voidrice/.config/fontconfig/fonts.conf
-|4,39,1,0,1517003335,"~/voidrice/.config/fontconfig/fonts.conf"
--'  1  0  ~/voidrice/.config/fontconfig/fonts.conf
-|4,39,1,0,1517003335,"~/voidrice/.config/fontconfig/fonts.conf"
--'  1  0  ~/voidrice/.config/fontconfig/fonts.conf
-|4,39,1,0,1517003335,"~/voidrice/.config/fontconfig/fonts.conf"
--'  1  0  ~/voidrice/.config/fontconfig/fonts.conf
-|4,39,1,0,1517003335,"~/voidrice/.config/fontconfig/fonts.conf"
--'  1  0  ~/voidrice/.config/fontconfig/fonts.conf
-|4,39,1,0,1517003335,"~/voidrice/.config/fontconfig/fonts.conf"
--'  1  0  ~/voidrice/.config/fontconfig/fonts.conf
-|4,39,1,0,1517003335,"~/voidrice/.config/fontconfig/fonts.conf"
--'  1  0  ~/voidrice/.config/fontconfig/fonts.conf
-|4,39,1,0,1517003335,"~/voidrice/.config/fontconfig/fonts.conf"
--'  1  0  ~/voidrice/.config/fontconfig/fonts.conf
-|4,39,1,0,1517003335,"~/voidrice/.config/fontconfig/fonts.conf"
--'  1  0  ~/voidrice/.config/fontconfig/fonts.conf
-|4,39,1,0,1517003335,"~/voidrice/.config/fontconfig/fonts.conf"
--'  1  0  ~/voidrice/.config/fontconfig/fonts.conf
-|4,39,1,0,1517003335,"~/voidrice/.config/fontconfig/fonts.conf"
--'  1  0  ~/voidrice/.config/fontconfig/fonts.conf
-|4,39,1,0,1517003335,"~/voidrice/.config/fontconfig/fonts.conf"
--'  1  0  ~/voidrice/.config/fontconfig/fonts.conf
-|4,39,1,0,1517003335,"~/voidrice/.config/fontconfig/fonts.conf"
--'  1  0  ~/voidrice/.config/compton.conf
-|4,39,1,0,1517003172,"~/voidrice/.config/compton.conf"
--'  1  0  ~/voidrice/.config/compton.conf
-|4,39,1,0,1517003172,"~/voidrice/.config/compton.conf"
--'  1  0  ~/voidrice/.config/compton.conf
-|4,39,1,0,1517003172,"~/voidrice/.config/compton.conf"
--'  1  0  ~/voidrice/.config/compton.conf
-|4,39,1,0,1517003172,"~/voidrice/.config/compton.conf"
--'  1  0  ~/voidrice/.config/compton.conf
-|4,39,1,0,1517003172,"~/voidrice/.config/compton.conf"
--'  1  0  ~/voidrice/.config/compton.conf
-|4,39,1,0,1517003172,"~/voidrice/.config/compton.conf"
--'  1  0  ~/voidrice/.config/compton.conf
-|4,39,1,0,1517003172,"~/voidrice/.config/compton.conf"
--'  1  0  ~/voidrice/.config/compton.conf
-|4,39,1,0,1517003172,"~/voidrice/.config/compton.conf"
--'  1  0  ~/voidrice/.config/compton.conf
-|4,39,1,0,1517003172,"~/voidrice/.config/compton.conf"
--'  1  0  ~/voidrice/.config/compton.conf
-|4,39,1,0,1517003172,"~/voidrice/.config/compton.conf"
--'  1  0  ~/voidrice/.config/compton.conf
-|4,39,1,0,1517003172,"~/voidrice/.config/compton.conf"
--'  1  0  ~/voidrice/.config/compton.conf
-|4,39,1,0,1517003172,"~/voidrice/.config/compton.conf"
--'  1  0  ~/voidrice/.config/compton.conf
-|4,39,1,0,1517003172,"~/voidrice/.config/compton.conf"
--'  1  0  ~/voidrice/.config/compton.conf
-|4,39,1,0,1517003172,"~/voidrice/.config/compton.conf"
--'  1  0  ~/voidrice/.config/compton.conf
-|4,39,1,0,1517003172,"~/voidrice/.config/compton.conf"
--'  1  0  ~/voidrice/.config/compton.conf
-|4,39,1,0,1517003172,"~/voidrice/.config/compton.conf"
--'  1  0  ~/voidrice/.config/compton.conf
-|4,39,1,0,1517003172,"~/voidrice/.config/compton.conf"
--'  1  0  ~/voidrice/.config/compton.conf
-|4,39,1,0,1517003172,"~/voidrice/.config/compton.conf"
--'  1  0  ~/voidrice/.config/compton.conf
-|4,39,1,0,1517003172,"~/voidrice/.config/compton.conf"
--'  1  0  ~/voidrice/.config/compton.conf
-|4,39,1,0,1517003172,"~/voidrice/.config/compton.conf"
--'  1  0  ~/voidrice/.config/compton.conf
-|4,39,1,0,1517003172,"~/voidrice/.config/compton.conf"
--'  1  0  ~/voidrice/.config/compton.conf
-|4,39,1,0,1517003172,"~/voidrice/.config/compton.conf"
--'  1  0  ~/voidrice/.config/compton.conf
-|4,39,1,0,1517003172,"~/voidrice/.config/compton.conf"
--'  1  0  ~/voidrice/.config/compton.conf
-|4,39,1,0,1517003172,"~/voidrice/.config/compton.conf"
--'  1  0  ~/voidrice/.config/compton.conf
-|4,39,1,0,1517003172,"~/voidrice/.config/compton.conf"
--'  1  0  ~/voidrice/.config/compton.conf
-|4,39,1,0,1517003172,"~/voidrice/.config/compton.conf"
--'  1  0  ~/voidrice/.config/compton.conf
-|4,39,1,0,1517003172,"~/voidrice/.config/compton.conf"
--'  1  0  ~/voidrice/.config/compton.conf
-|4,39,1,0,1517003172,"~/voidrice/.config/compton.conf"
--'  1  0  ~/voidrice/.config/compton.conf
-|4,39,1,0,1517003172,"~/voidrice/.config/compton.conf"
--'  1  0  ~/voidrice/.config/compton.conf
-|4,39,1,0,1517003172,"~/voidrice/.config/compton.conf"
--'  1  0  ~/voidrice/.config/compton.conf
-|4,39,1,0,1517003172,"~/voidrice/.config/compton.conf"
--'  1  0  ~/voidrice/.config/compton.conf
-|4,39,1,0,1517003172,"~/voidrice/.config/compton.conf"
--'  1  0  ~/voidrice/.config/feh/keys
-|4,39,1,0,1517003082,"~/voidrice/.config/feh/keys"
--'  1  0  ~/voidrice/.config/feh/keys
-|4,39,1,0,1517003082,"~/voidrice/.config/feh/keys"
--'  1  0  ~/voidrice/.config/feh/keys
-|4,39,1,0,1517003082,"~/voidrice/.config/feh/keys"
--'  1  0  ~/voidrice/.config/feh/keys
-|4,39,1,0,1517003082,"~/voidrice/.config/feh/keys"
--'  1  0  ~/voidrice/.config/feh/keys
-|4,39,1,0,1517003082,"~/voidrice/.config/feh/keys"
--'  1  0  ~/voidrice/.config/feh/keys
-|4,39,1,0,1517003082,"~/voidrice/.config/feh/keys"
--'  1  0  ~/voidrice/.config/feh/keys
-|4,39,1,0,1517003082,"~/voidrice/.config/feh/keys"
--'  1  0  ~/voidrice/.config/feh/keys
-|4,39,1,0,1517003082,"~/voidrice/.config/feh/keys"
--'  1  0  ~/voidrice/.config/feh/keys
-|4,39,1,0,1517003082,"~/voidrice/.config/feh/keys"
--'  1  0  ~/voidrice/.config/feh/keys
-|4,39,1,0,1517003082,"~/voidrice/.config/feh/keys"
--'  1  0  ~/voidrice/.config/feh/keys
-|4,39,1,0,1517003082,"~/voidrice/.config/feh/keys"
--'  1  0  ~/voidrice/.config/feh/keys
-|4,39,1,0,1517003082,"~/voidrice/.config/feh/keys"
--'  1  0  ~/voidrice/.config/feh/keys
-|4,39,1,0,1517003082,"~/voidrice/.config/feh/keys"
--'  1  0  ~/voidrice/.config/feh/keys
-|4,39,1,0,1517003082,"~/voidrice/.config/feh/keys"
--'  1  0  ~/voidrice/.config/feh/keys
-|4,39,1,0,1517003082,"~/voidrice/.config/feh/keys"
--'  1  0  ~/voidrice/.config/feh/keys
-|4,39,1,0,1517003082,"~/voidrice/.config/feh/keys"
--'  1  0  ~/voidrice/.config/feh/keys
-|4,39,1,0,1517003082,"~/voidrice/.config/feh/keys"
--'  1  0  ~/voidrice/.config/feh/keys
-|4,39,1,0,1517003082,"~/voidrice/.config/feh/keys"
--'  1  0  ~/voidrice/.config/feh/keys
-|4,39,1,0,1517003082,"~/voidrice/.config/feh/keys"
--'  1  0  ~/voidrice/.config/feh/keys
-|4,39,1,0,1517003082,"~/voidrice/.config/feh/keys"
--'  1  0  ~/voidrice/.config/feh/keys
-|4,39,1,0,1517003082,"~/voidrice/.config/feh/keys"
--'  1  0  ~/voidrice/.config/feh/keys
-|4,39,1,0,1517003082,"~/voidrice/.config/feh/keys"
--'  1  0  ~/voidrice/.config/feh/keys
-|4,39,1,0,1517003082,"~/voidrice/.config/feh/keys"
--'  1  0  ~/voidrice/.config/feh/keys
-|4,39,1,0,1517003082,"~/voidrice/.config/feh/keys"
--'  1  0  ~/voidrice/.config/feh/keys
-|4,39,1,0,1517003082,"~/voidrice/.config/feh/keys"
--'  1  0  ~/voidrice/.config/feh/keys
-|4,39,1,0,1517003082,"~/voidrice/.config/feh/keys"
--'  1  0  ~/voidrice/.config/feh/keys
-|4,39,1,0,1517003082,"~/voidrice/.config/feh/keys"
--'  1  0  ~/voidrice/.config/feh/keys
-|4,39,1,0,1517003082,"~/voidrice/.config/feh/keys"
--'  1  0  ~/voidrice/.config/feh/keys
-|4,39,1,0,1517003082,"~/voidrice/.config/feh/keys"
--'  1  0  ~/voidrice/.config/feh/keys
-|4,39,1,0,1517003082,"~/voidrice/.config/feh/keys"
--'  1  0  ~/voidrice/.config/feh/keys
-|4,39,1,0,1517003082,"~/voidrice/.config/feh/keys"
--'  1  0  ~/voidrice/.config/feh/keys
-|4,39,1,0,1517003082,"~/voidrice/.config/feh/keys"
--'  1  0  ~/voidrice/.config/feh/keys
-|4,39,1,0,1517003082,"~/voidrice/.config/feh/keys"
--'  1  0  ~/voidrice/.config/feh/keys
-|4,39,1,0,1517003082,"~/voidrice/.config/feh/keys"
--'  1  0  ~/voidrice/.config/feh/keys
-|4,39,1,0,1517003082,"~/voidrice/.config/feh/keys"
+|4,39,3,9,1517129495,"~/.gitignore"
+-'  1  0  ~/.gitoig
+|4,39,1,0,1517129490,"~/.gitoig"
+-'  1  0  ~/.gitoig
+|4,39,1,0,1517129490,"~/.gitoig"
+-'  1  0  ~/voidrice/.config/i3/config
+|4,39,1,0,1517129476,"~/voidrice/.config/i3/config"
+-'  1  0  ~/voidrice/.config/i3/config
+|4,39,1,0,1517129476,"~/voidrice/.config/i3/config"
+-'  1  0  ~/voidrice/.config/i3/config
+|4,39,1,0,1517129476,"~/voidrice/.config/i3/config"
+-'  1  0  ~/voidrice/.config/i3/config
+|4,39,1,0,1517129476,"~/voidrice/.config/i3/config"
+-'  229  28  ~/.config/i3/config
+|4,39,229,28,1517129453,"~/.config/i3/config"
+-'  229  28  ~/.config/i3/config
+|4,39,229,28,1517129453,"~/.config/i3/config"
+-'  229  28  ~/.config/i3/config
+|4,39,229,28,1517129453,"~/.config/i3/config"
+-'  229  28  ~/.config/i3/config
+|4,39,229,28,1517129453,"~/.config/i3/config"
+-'  88  0  ~/.config/i3/config
+|4,39,88,0,1517082666,"~/.config/i3/config"
+-'  88  0  ~/.config/i3/config
+|4,39,88,0,1517082666,"~/.config/i3/config"
+-'  88  0  ~/.config/i3/config
+|4,39,88,0,1517082666,"~/.config/i3/config"
+-'  88  0  ~/.config/i3/config
+|4,39,88,0,1517082666,"~/.config/i3/config"
+-'  88  0  ~/.config/i3/config
+|4,39,88,0,1517082660,"~/.config/i3/config"
+-'  88  0  ~/.config/i3/config
+|4,39,88,0,1517082660,"~/.config/i3/config"
+-'  88  0  ~/.config/i3/config
+|4,39,88,0,1517082660,"~/.config/i3/config"
+-'  88  0  ~/.config/i3/config
+|4,39,88,0,1517082660,"~/.config/i3/config"
+-'  117  0  ~/.config/i3/config
+|4,39,117,0,1517082611,"~/.config/i3/config"
+-'  117  0  ~/.config/i3/config
+|4,39,117,0,1517082611,"~/.config/i3/config"
+-'  117  0  ~/.config/i3/config
+|4,39,117,0,1517082611,"~/.config/i3/config"
+-'  117  0  ~/.config/i3/config
+|4,39,117,0,1517082611,"~/.config/i3/config"
+-'  117  0  ~/.config/i3/config
+|4,39,117,0,1517082611,"~/.config/i3/config"
+-'  117  0  ~/.config/i3/config
+|4,39,117,0,1517082611,"~/.config/i3/config"
+-'  117  0  ~/.config/i3/config
+|4,39,117,0,1517082611,"~/.config/i3/config"
+-'  117  0  ~/.config/i3/config
+|4,39,117,0,1517082611,"~/.config/i3/config"
+-'  16  8  ~/.zshrc
+|4,39,16,8,1517065617,"~/.zshrc"
+-'  16  8  ~/.zshrc
+|4,39,16,8,1517065617,"~/.zshrc"
+-'  16  8  ~/.zshrc
+|4,39,16,8,1517065617,"~/.zshrc"
+-'  16  8  ~/.zshrc
+|4,39,16,8,1517065617,"~/.zshrc"
+-'  16  8  ~/.zshrc
+|4,39,16,8,1517065617,"~/.zshrc"
+-'  16  8  ~/.zshrc
+|4,39,16,8,1517065617,"~/.zshrc"
+-'  16  8  ~/.zshrc
+|4,39,16,8,1517065617,"~/.zshrc"
+-'  16  8  ~/.zshrc
+|4,39,16,8,1517065617,"~/.zshrc"
+-'  16  8  ~/.zshrc
+|4,39,16,8,1517065617,"~/.zshrc"
+-'  16  8  ~/.zshrc
+|4,39,16,8,1517065617,"~/.zshrc"
+-'  16  8  ~/.zshrc
+|4,39,16,8,1517065617,"~/.zshrc"
+-'  16  8  ~/.zshrc
+|4,39,16,8,1517065617,"~/.zshrc"
+-'  16  8  ~/.zshrc
+|4,39,16,8,1517065617,"~/.zshrc"
+-'  16  8  ~/.zshrc
+|4,39,16,8,1517065617,"~/.zshrc"
+-'  16  8  ~/.zshrc
+|4,39,16,8,1517065617,"~/.zshrc"
+-'  16  8  ~/.zshrc
+|4,39,16,8,1517065617,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1517065594,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1517065594,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1517065594,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1517065594,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1517065594,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1517065594,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1517065594,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1517065594,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1517065594,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1517065594,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1517065594,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1517065594,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1517065594,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1517065594,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1517065594,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1517065594,"~/.zshrc"
+-'  4  9  ~/.zprofile
+|4,39,4,9,1517065578,"~/.zprofile"
+-'  4  9  ~/.zprofile
+|4,39,4,9,1517065578,"~/.zprofile"
+-'  4  9  ~/.zprofile
+|4,39,4,9,1517065578,"~/.zprofile"
+-'  4  9  ~/.zprofile
+|4,39,4,9,1517065578,"~/.zprofile"
+-'  4  9  ~/.zprofile
+|4,39,4,9,1517065578,"~/.zprofile"
+-'  4  9  ~/.zprofile
+|4,39,4,9,1517065578,"~/.zprofile"
+-'  4  9  ~/.zprofile
+|4,39,4,9,1517065578,"~/.zprofile"
+-'  4  9  ~/.zprofile
+|4,39,4,9,1517065578,"~/.zprofile"
+-'  4  9  ~/.zprofile
+|4,39,4,9,1517065578,"~/.zprofile"
+-'  4  9  ~/.zprofile
+|4,39,4,9,1517065578,"~/.zprofile"
+-'  4  9  ~/.zprofile
+|4,39,4,9,1517065578,"~/.zprofile"
+-'  4  9  ~/.zprofile
+|4,39,4,9,1517065578,"~/.zprofile"
+-'  4  9  ~/.zprofile
+|4,39,4,9,1517065578,"~/.zprofile"
+-'  4  9  ~/.zprofile
+|4,39,4,9,1517065578,"~/.zprofile"
+-'  4  9  ~/.zprofile
+|4,39,4,9,1517065578,"~/.zprofile"
+-'  4  9  ~/.zprofile
+|4,39,4,9,1517065578,"~/.zprofile"
+-'  4  9  ~/.zprofile
+|4,39,4,9,1517065578,"~/.zprofile"
+-'  4  9  ~/.zprofile
+|4,39,4,9,1517065578,"~/.zprofile"
+-'  4  9  ~/.zprofile
+|4,39,4,9,1517065578,"~/.zprofile"
+-'  4  9  ~/.zprofile
+|4,39,4,9,1517065578,"~/.zprofile"
+-'  4  9  ~/.zprofile
+|4,39,4,9,1517065578,"~/.zprofile"
+-'  4  9  ~/.zprofile
+|4,39,4,9,1517065578,"~/.zprofile"
+-'  4  9  ~/.zprofile
+|4,39,4,9,1517065578,"~/.zprofile"
+-'  4  9  ~/.zprofile
+|4,39,4,9,1517065578,"~/.zprofile"
+-'  4  9  ~/.zprofile
+|4,39,4,9,1517065578,"~/.zprofile"
+-'  4  9  ~/.zprofile
+|4,39,4,9,1517065578,"~/.zprofile"
+-'  4  9  ~/.zprofile
+|4,39,4,9,1517065578,"~/.zprofile"
+-'  4  9  ~/.zprofile
+|4,39,4,9,1517065578,"~/.zprofile"
+-'  4  9  ~/.zprofile
+|4,39,4,9,1517065578,"~/.zprofile"
+-'  4  9  ~/.zprofile
+|4,39,4,9,1517065578,"~/.zprofile"
+-'  4  9  ~/.zprofile
+|4,39,4,9,1517065578,"~/.zprofile"
+-'  4  9  ~/.zprofile
+|4,39,4,9,1517065578,"~/.zprofile"
+-'  36  29  ~/.config/mpd/mpd.conf
+|4,39,36,29,1517063902,"~/.config/mpd/mpd.conf"
+-'  36  29  ~/.config/mpd/mpd.conf
+|4,39,36,29,1517063902,"~/.config/mpd/mpd.conf"
+-'  36  29  ~/.config/mpd/mpd.conf
+|4,39,36,29,1517063902,"~/.config/mpd/mpd.conf"
+-'  36  29  ~/.config/mpd/mpd.conf
+|4,39,36,29,1517063902,"~/.config/mpd/mpd.conf"
+-'  36  29  ~/.config/mpd/mpd.conf
+|4,39,36,29,1517063902,"~/.config/mpd/mpd.conf"
+-'  36  29  ~/.config/mpd/mpd.conf
+|4,39,36,29,1517063902,"~/.config/mpd/mpd.conf"
+-'  36  29  ~/.config/mpd/mpd.conf
+|4,39,36,29,1517063902,"~/.config/mpd/mpd.conf"
+-'  36  29  ~/.config/mpd/mpd.conf
+|4,39,36,29,1517063902,"~/.config/mpd/mpd.conf"
 
 # History of marks within files (newest to oldest):
 
 > ~/.gitignore
-	*	1517046482	0
-	"	3	9
-	^	3	10
-	.	3	9
+	*	1517129504	0
+	"	4	4
+	^	4	5
+	.	4	4
 	+	2	8
-	+	3	9
+	+	3	10
+	+	4	4
+
+> ~/.gitoig
+	*	1517129488	0
+	"	1	0
+
+> ~/.config/i3/config
+	*	1517129449	0
+	"	229	28
+	^	229	29
+	.	229	28
+	+	39	33
+	+	156	1
+	+	157	0
+	+	205	0
+	+	199	0
+	+	198	0
+	+	199	0
+	+	200	0
+	+	201	0
+	+	202	0
+	+	199	26
+	+	200	26
+	+	201	26
+	+	204	80
+	+	205	12
+	+	206	18
+	+	205	43
+	+	206	25
+	+	205	21
+	+	221	0
+	+	209	18
+	+	221	0
+	+	218	0
+	+	217	0
+	+	210	0
+	+	211	0
+	+	212	0
+	+	213	0
+	+	214	0
+	+	209	44
+	+	210	25
+	+	211	30
+	+	212	25
+	+	213	27
+	+	214	50
+	+	216	37
+	+	217	31
+	+	218	0
+	+	219	0
+	+	220	0
+	+	221	0
+	+	218	0
+	+	217	48
+	+	218	45
+	+	219	47
+	+	220	46
+	+	221	43
+	+	222	0
+	+	223	0
+	+	223	25
+	+	224	25
+	+	225	25
+	+	226	25
+	+	224	46
+	+	226	42
+	+	227	65
+	+	227	63
+	+	229	28
+
+> ~/voidrice/.config/i3/config
+	*	1517129440	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/.zshrc
+	*	1517065617	0
+	"	16	8
+	^	16	9
+	.	16	8
+	+	16	8
+
+> ~/.zprofile
+	*	1517065577	0
+	"	4	9
+	^	4	10
+	.	4	9
+	+	2	28
+	+	4	9
+
+> ~/.config/mpd/mpd.conf
+	*	1517063899	0
+	"	36	29
+	^	22	24
+	.	22	23
+	+	2	0
+	+	16	0
+	+	17	0
+	+	18	0
+	+	19	0
+	+	20	2
+	+	24	14
+	+	25	13
+	+	26	18
+	+	22	23
+
+> /usr/lib/systemd/system/mpd.service
+	*	1517062972	0
+	"	28	18
+	^	28	19
+	.	28	18
+	+	28	18
+
+> /usr/share/alsa/alsa.conf
+	*	1517061443	0
+	"	483	0
+
+> ~/voidrice/.ncmpcpp/bindings
+	*	1517051794	0
+	"	612	0
+
+> ~/voidrice/.ncmpcpp/config
+	*	1517051775	0
+	"	545	0
+
+> ~/voidrice/.config/mpd/mpd.conf
+	*	1517049905	0
+	"	1	0
+
+> /etc/locale.conf
+	*	1517047851	0
+	"	1	15
+	^	1	16
+	.	1	15
+	+	1	15
+
+> /etc/locale.gen
+	*	1517047773	0
+	"	184	0
+
+> ~/locale.gen
+	*	1517047751	0
+	"	1	0
+
+> ~/.xinitrc
+	*	1517047427	0
+	"	1	37
+	^	1	38
+	.	1	37
+	+	1	37
+
+> ~/.xse
+	*	1517047227	0
+	"	1	0
 
 > ~/.giti
 	*	1517046428	0
@@ -387,13 +672,6 @@ $
 	+	4	1
 	+	33	25
 	+	37	25
-
-> ~/.config/i3/config
-	*	1516947018	0
-	"	39	33
-	^	39	34
-	.	39	33
-	+	39	33
 
 > ~/.config/Scripts/welcome
 	*	1516908859	0

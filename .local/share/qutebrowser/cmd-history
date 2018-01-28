@@ -13,3 +13,22 @@
 :open backlight arch
 :open https://www.youtube.com/
 :open duckduck\
+:open i3 set wallpaper feh
+:open https://www.youtube.com/
+:gO
+:open -t -r https://www.youtube.com/watch?v=4Gb5HnOq6Q4&list=RDMMGD2THFRoYW0&index=3
+:open st terminal arch
+:open mpd arch
+:open -t -r alsa lib pcm_dmix.c 1099 unable to open slave
+:open mpv arch
+:open moc arch
+:open systemctl which services are running
+:open pinentry arch
+:open what is blender arch
+:open marble arch
+:open what is gimp arch linux
+:open gtkfileschooserdialog
+:open mupfd
+:open no startup id i3
+/--no-startup-id
+:open zzz arch linux

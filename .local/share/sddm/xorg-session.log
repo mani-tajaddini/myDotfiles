@@ -1,27 +1,52 @@
 i3status: trying to auto-detect output_format setting
 i3status: auto-detected "i3bar"
-urxvt: perl extension 'keyboard-select' not found in perl library search path
-urxvt: perl extension 'resize-font' not found in perl library search path
-urxvt: perl extension 'url-select' not found in perl library search path
-urxvt: unable to parse color 'magneta', using pink instead.
-urxvt: perl extension 'keyboard-select' not found in perl library search path
-urxvt: perl extension 'resize-font' not found in perl library search path
-urxvt: perl extension 'url-select' not found in perl library search path
-urxvt: unable to parse color 'magneta', using pink instead.
-Error: Must run ranger from terminal
 Exiting due to signal.
 BUG: single log message > 4k
 i3status: trying to auto-detect output_format setting
 i3status: auto-detected "i3bar"
-Exiting due to signal.
-BUG: single log message > 4k
-i3status: trying to auto-detect output_format setting
-i3status: auto-detected "i3bar"
-Exiting due to signal.
-BUG: single log message > 4k
-i3status: trying to auto-detect output_format setting
-i3status: auto-detected "i3bar"
-Exiting due to signal.
-BUG: single log message > 4k
-i3status: trying to auto-detect output_format setting
-i3status: auto-detected "i3bar"
+[0127/215506.100797:WARNING:stack_trace_posix.cc(648)] Failed to open file: /home/mani/#32246314 (deleted)
+  Error: No such file or directory
+21:55:07 INFO: Run :adblock-update to get adblock lists.
+[9188:9207:0127/215513.790145:ERROR:ssl_client_socket_impl.cc(1129)] handshake failed; returned -1, SSL error code 1, net_error -101
+[9188:9207:0127/215513.814825:ERROR:ssl_client_socket_impl.cc(1129)] handshake failed; returned -1, SSL error code 1, net_error -101
+[9188:9207:0127/215513.821320:ERROR:ssl_client_socket_impl.cc(1129)] handshake failed; returned -1, SSL error code 1, net_error -101
+[9188:9261:0127/215514.130613:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.DBus.Properties.Get: object_path= /org/freedesktop/UPower: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.UPower was not provided by any .service files
+[9188:9261:0127/215514.130753:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.UPower.GetDisplayDevice: object_path= /org/freedesktop/UPower: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.UPower was not provided by any .service files
+[9188:9261:0127/215514.130876:ERROR:object_proxy.cc(573)] Failed to call method: org.freedesktop.UPower.EnumerateDevices: object_path= /org/freedesktop/UPower: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.UPower was not provided by any .service files
+[9188:9195:0127/215517.599246:ERROR:nss_ocsp.cc(613)] No URLRequestContext for NSS HTTP handler. host: ocsp.digicert.com
+[9188:9195:0127/215517.599278:ERROR:nss_ocsp.cc(613)] No URLRequestContext for NSS HTTP handler. host: ocsp.digicert.com
+[9188:9195:0127/215517.599298:ERROR:nss_ocsp.cc(613)] No URLRequestContext for NSS HTTP handler. host: crl4.digicert.com
+[9188:9195:0127/215517.600629:ERROR:nss_ocsp.cc(613)] No URLRequestContext for NSS HTTP handler. host: ocsp.digicert.com
+[9188:9195:0127/215517.600648:ERROR:nss_ocsp.cc(613)] No URLRequestContext for NSS HTTP handler. host: ocsp.digicert.com
+[9188:9195:0127/215517.600667:ERROR:nss_ocsp.cc(613)] No URLRequestContext for NSS HTTP handler. host: crl4.digicert.com
+21:57:38 INFO: Search hit TOP, continuing at BOTTOM
+21:57:38 WARNING: Text 'open w' not found on page!
+21:57:38 WARNING: Text 'open wh' not found on page!
+21:57:38 WARNING: Text 'open wha' not found on page!
+21:57:38 WARNING: Text 'open what' not found on page!
+21:57:38 WARNING: Text 'open what' not found on page!
+21:57:39 WARNING: Text 'open what i' not found on page!
+21:57:39 WARNING: Text 'open what is' not found on page!
+21:57:39 WARNING: Text 'open what is' not found on page!
+21:57:41 WARNING: Text 'open what is' not found on page!
+21:57:41 WARNING: Text 'open what i' not found on page!
+21:57:41 WARNING: Text 'open what' not found on page!
+21:57:41 WARNING: Text 'open what' not found on page!
+21:57:41 WARNING: Text 'open wha' not found on page!
+21:57:41 WARNING: Text 'open wh' not found on page!
+21:57:41 WARNING: Text 'open w' not found on page!
+21:57:41 INFO: Search hit TOP, continuing at BOTTOM
+21:57:44 WARNING: Text '::' not found on page!
+[9188:9207:0127/220121.616384:ERROR:ssl_client_socket_impl.cc(1129)] handshake failed; returned -1, SSL error code 1, net_error -101
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
